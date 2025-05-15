@@ -6,6 +6,6 @@ class User < ApplicationRecord
   has_many :question_selections, dependent: :destroy
   has_many :notifications, dependent: :destroy
 
-  validates :name, :email, presence :true
-  validates :email, :uniqueness: true
+  validates :name, :email, presence: true
+  validates :email, uniqueness: true
 end
